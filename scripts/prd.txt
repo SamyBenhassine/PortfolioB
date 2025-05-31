@@ -1,0 +1,72 @@
+## Product Requirements Document (PRD)
+
+### Project: Portfolio Website – Home/About Section Redesign
+
+#### Overview
+This update aims to merge the Home and About sections, streamline the hero/title area, and improve the About section's prominence and clarity, while maintaining the existing React, TypeScript, and Tailwind CSS stack.
+
+---
+
+### Goals
+
+- Merge the Home and About sections into a single homepage, named "About."
+- Move the large "Samy Benhassine" text to the upper left, replacing the "SB" logo, but only on the About (homepage).
+- In all other sections, display "SB" in the upper left, with a smooth animated transition between "Samy Benhassine" (on About) and "SB" (elsewhere).
+- Change the subtitle "Software Engineer & Designer" to "Software Engineer" and make it the main title of the About section, increasing its font size for emphasis.
+- Ensure all changes fit seamlessly with the current codebase, using React functional components, hooks, context, and Tailwind CSS for styling and animation.
+
+---
+
+### Requirements
+
+#### 1. Section Merging & Routing
+- Remove the separate Home section/component.
+- The About section becomes the homepage and is accessible at the root route.
+- Navigation and scroll behavior should be updated to reflect this change.
+
+#### 2. Header/Logo Area
+- The upper left logo area should display:
+  - "Samy Benhassine" (slightly smaller than the current hero font) when on the About (homepage).
+  - "SB" (current size) on all other sections.
+- Implement a smooth animation (e.g., fade/scale/slide) when transitioning between "Samy Benhassine" and "SB" as the user navigates.
+- Ensure the logo/title is always clickable and returns to the About (homepage).
+
+#### 3. About Section Redesign
+- The About section should:
+  - Serve as the homepage.
+  - Use "Software Engineer" as the main title, with a larger font size than before.
+  - Remove "Designer" from the subtitle.
+  - Retain the personal introduction, avatar, and "View my skills" link.
+- Adjust layout and spacing as needed for visual balance.
+
+#### 4. Navigation & Context
+- Update navigation buttons and scroll/anchor logic to reflect the merged sections.
+- Ensure the theme toggle and other header features remain functional.
+
+#### 5. Animation & Responsiveness
+- Use Tailwind CSS and React for all styling and animation.
+- Ensure the animated logo/title transition is smooth and accessible.
+- Maintain full responsiveness and accessibility across devices.
+
+#### 6. Code Quality
+- Use TypeScript for all components.
+- Follow existing code patterns and context usage.
+- Keep all logic modular and maintainable.
+
+---
+
+### Out of Scope
+
+- No backend/API changes.
+- No changes to project data, skills, or timeline content.
+- No new sections or features beyond those described.
+
+---
+
+### Acceptance Criteria
+
+- The About section is the homepage and contains all relevant content.
+- The logo/title area animates smoothly between "Samy Benhassine" and "SB" depending on the section.
+- "Software Engineer" is the About section's main title, styled prominently.
+- All navigation, theming, and responsiveness are preserved.
+- Code is clean, modular, and consistent with the existing stack. 
