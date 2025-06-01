@@ -23,8 +23,8 @@ const About: React.FC = () => {
               <span className="text-accent">/</span> About Me
             </h2>
             <div className="mt-8 md:mt-12 max-w-lg">
-              <h3 className="text-2xl font-bold mb-4">
-                Software Engineer with passion for creating elegant solutions
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-accent via-purple-400 to-accent bg-clip-text text-transparent animate-gradient bg-300% hover:scale-105 transition-transform duration-300">
+                Software Engineer
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Born in 1994 in Osaka, Japan. I believe web design can be more diverse and inspiring. 
