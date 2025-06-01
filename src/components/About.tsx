@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 min-h-screen flex items-center">
+    <section id="about" className="py+20 flex items-center">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mt-24 md:mt-32">
           {/* Left: Rectangle/Image */}
@@ -18,12 +18,12 @@ const About: React.FC = () => {
             <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-accent/20 rounded-2xl"></div>
           </div>
           {/* Right: About Me title and text */}
-          <div className="flex flex-col justify-start items-center md:items-end h-full text-right">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-0 tracking-tight text-right md:mt-0">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-0 tracking-tight text-right md:mt-0 bg-gradient-to-r from-[#64ffda] via-[#8A2BE2] to-[#64ffda] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
               <span className="text-accent">/</span> About Me
             </h2>
             <div className="mt-8 md:mt-12 max-w-lg">
-              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-accent via-purple-400 to-accent bg-clip-text text-transparent animate-gradient bg-300% hover:scale-105 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-4">
                 Software Engineer
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">

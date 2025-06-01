@@ -12,11 +12,13 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 min-h-screen flex items-center bg-gray-900/50">
+    <section id="skills" className="py-20 flex items-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-16 tracking-tight">
-          <span className="text-accent">/</span> Skills & Expertise
-        </h2>
+        <div className="pt-8 md:pt-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-16 tracking-tight bg-gradient-to-r from-[#64ffda] via-[#8A2BE2] to-[#64ffda] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
+            <span className="text-accent">/</span> Skills & Expertise
+          </h2>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (

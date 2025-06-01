@@ -19,14 +19,21 @@ const Header: React.FC = () => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerOffset = 50; // Offset to account for header and ensure title visibility
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
     <header id="about" className="flex flex-col justify-center items-center relative">
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrollPosition > 50 ? 'bg-dark/90 backdrop-blur-sm py-4' : 'py-6'
+        scrollPosition > 50 ? 'bg-dark/90 backdrop-blur-sm py-0' : 'py-6'
       }`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <AnimatedLogo />
@@ -41,7 +48,7 @@ const Header: React.FC = () => {
                     scrollTo(item);
                   }
                 }}
-                className="text-light hover:text-accent transition-colors duration-300 capitalize"
+                className="text-lg text-light hover:text-accent transition-colors duration-300 capitalize"
               >
                 {item}
               </button>

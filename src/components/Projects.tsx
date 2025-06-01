@@ -54,9 +54,9 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 min-h-screen">
+    <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-16 tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold mb-16 tracking-tight text-right bg-gradient-to-r from-[#64ffda] via-[#8A2BE2] to-[#64ffda] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
           <span className="text-accent">/</span> Projects
         </h2>
         

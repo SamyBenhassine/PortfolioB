@@ -41,9 +41,9 @@ const Timeline: React.FC = () => {
   ];
 
   return (
-    <section id="timeline" className="py-20 min-h-screen flex items-center">
+    <section id="timeline" className="py-20 flex items-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-16 tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold mb-16 tracking-tight bg-gradient-to-r from-[#64ffda] via-[#8A2BE2] to-[#64ffda] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
           <span className="text-accent">/</span> Journey
         </h2>
 

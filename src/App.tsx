@@ -4,6 +4,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Timeline from './components/Timeline';
+import Contact from './components/Contact';
 import SocialSidebar from './components/SocialSidebar';
 import ContactSidebar from './components/ContactSidebar';
 import CustomCursor from './components/CustomCursor';
@@ -39,27 +40,16 @@ function App() {
         <ParticleBackground />
         <SocialSidebar />
         <ContactSidebar />
-        <main>
-          <Header />
-          <About />
-          <Skills />
-          <Projects />
-          <Timeline />
-          <div id="contact" className="mt-24 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-              Let's work together
-            </h2>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              I'm currently available for freelance work. If you have a project that could use my help,
-              please get in touch.
-            </p>
-            <a 
-              href="mailto:hello@example.com" 
-              className="px-8 py-4 rounded-full bg-accent hover:bg-accent/80 text-light transition-all duration-300 transform hover:scale-105 inline-flex items-center"
-            >
-              <span>hello@example.com</span>
-              <span className="ml-2">→</span>
-            </a>
+        <Header />
+        <main className="max-w-[1500px] mx-auto px-4 md:px-8 relative mb-20">
+          <div className="relative border border-transparent bg-gradient-to-r from-[#64ffda] via-[#8A2BE2] to-[#64ffda] bg-[length:200%_auto] animate-gradient rounded-lg p-[1px] mt-48">
+            <div className="bg-dark rounded-lg">
+              <About />
+              <Skills />
+              <Projects />
+              <Timeline />
+              <Contact />
+            </div>
           </div>
         </main>
       </div>
