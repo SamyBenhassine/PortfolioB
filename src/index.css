@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root element size fix for GitHub Pages */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
 :root {
   /* New gradient colors matching the HTML snippet */
   --gradient-primary-start: #667eea;
@@ -42,10 +49,28 @@ body {
   overflow-x: hidden;
   color: var(--text-light);
   min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 /* Dynamic scrolling gradient background - Updated to match HTML snippet */
