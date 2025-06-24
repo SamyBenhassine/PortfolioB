@@ -221,7 +221,7 @@ const Skills: React.FC = () => {
                   <button
                     key={projectIndex}
                     onClick={(e) => handleProjectTagClick(project, e)}
-                    className="text-sm px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
+                    className="text-xl md:text-2xl lg:text-3xl px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
                   >
                     {project.length > 30 ? `${project.substring(0, 30)}...` : project}
                   </button>
@@ -237,13 +237,13 @@ const Skills: React.FC = () => {
 
         {/* Soft Skills Section */}
         <div className="flex justify-start mb-8">
-          <h3 className="text-xl md:text-2xl font-semibold text-white">
+          <h3 className="text-2xl md:text-3xl font-semibold text-white">
             Soft Skills
           </h3>
         </div>
         
         {/* Soft Skills */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {softSkills.map((skill, index) => {
             const adjustedIndex = index + technicalSkills.length;
             return (
@@ -271,7 +271,7 @@ const Skills: React.FC = () => {
                     <button
                       key={projectIndex}
                       onClick={(e) => handleProjectTagClick(project, e)}
-                      className="text-sm px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
+                      className="text-xl md:text-2xl lg:text-3xl px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
                     >
                       {project.length > 40 ? `${project.substring(0, 40)}...` : project}
                     </button>
@@ -352,7 +352,7 @@ const Skills: React.FC = () => {
                   <button
                     key={projectIndex}
                     onClick={(e) => handleProjectTagClick(project, e)}
-                    className="text-sm px-4 py-2 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
+                    className="text-2xl md:text-3xl lg:text-4xl px-4 py-2 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
                   >
                     {project}
                   </button>
