@@ -5,16 +5,16 @@ const About: React.FC = () => {
     <section id="about" className="py-12 min-h-screen flex items-center">
       <div className="container mx-auto px-8 w-4/5 max-w-none">
         <div className="mt-16 md:mt-20">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-light mb-8 text-white">
+          <h1 className="text-5xl md:text-6xl font-light mb-8 text-white">
             <span className="text-coolors-green-bright">/</span> 
             <span className="ml-2">A propos de moi</span>
           </h1>
           <div className="mt-6 md:mt-8">
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-coolors-cyan-light">
+            <h3 className="text-3xl font-bold mb-8 text-coolors-cyan-light">
                Backend Software Engineer
             </h3>
             <div className="glass-card p-12 border-l-4 border-coolors-green-bright mb-8 rounded-lg min-h-96">
-              <p className="text-gray-100 leading-relaxed text-2xl md:text-3xl lg:text-4xl">
+              <p className="text-gray-100 leading-relaxed text-2xl">
               Je suis ingénieur logiciel, spécialisé en backend, passionné par ce qui se passe sous le capot des systèmes complexes. J'aime quand la technique a du sens, quand elle sert des usages concrets.<br />
               C'est le cas dans le secteur des cartes de paiement chez Worldline, où je travaille sur des applications critiques.<br />
               <br />

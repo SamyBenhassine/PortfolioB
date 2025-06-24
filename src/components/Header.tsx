@@ -211,7 +211,7 @@ const Header: React.FC = () => {
                 key={item}
                 ref={(el) => navItemsRef.current[item] = el}
                 onClick={() => handleNavClick(item)}
-                className={`relative z-10 px-4 py-2 text-base md:text-lg lg:text-xl font-medium rounded-full transition-all duration-300 capitalize ${
+                className={`relative z-10 px-4 py-2 text-base font-medium rounded-full transition-all duration-300 capitalize ${
                   activeSection === item 
                     ? 'text-white font-semibold' 
                     : 'text-white/70 hover:text-white/90'
