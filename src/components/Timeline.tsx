@@ -76,7 +76,7 @@ const Timeline: React.FC = () => {
   return (
     <section id="timeline" className="pt-24 pb-16">
       <div className="container mx-auto px-8 w-4/5 max-w-none">
-        <h2 className="text-5xl md:text-6xl font-light mb-12 tracking-tight text-center text-white">
+        <h2 className="text-3xl md:text-4xl font-light mb-12 tracking-tight text-center text-white">
           <span className="text-coolors-green-bright">/</span> 
           <span className="ml-2">Timeline</span>
         </h2>
@@ -111,7 +111,7 @@ const Timeline: React.FC = () => {
                 <div className="absolute inset-0 w-16 h-16 rounded-full bg-gradient-to-br from-purple-400/10 to-blue-400/10 blur-sm"></div>
                 
                 {/* Main bubble - glass morphism style */}
-                <div className="relative w-14 h-14 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/90 font-medium text-xs z-20 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
+                <div className="relative w-16 h-16 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/90 font-medium text-sm z-20 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105">
                   {year}
                 </div>
 
@@ -176,14 +176,14 @@ const Timeline: React.FC = () => {
                         )}
                       </span>
                     </div>
-                    <h3 className={`text-lg font-medium ${isAlternanceCard ? 'mb-2' : 'mb-3'} text-white leading-tight text-center group-hover:text-white transition-colors duration-300`}>
+                    <h3 className={`text-xl md:text-2xl font-medium ${isAlternanceCard ? 'mb-2' : 'mb-3'} text-white leading-tight text-center group-hover:text-white transition-colors duration-300`}>
                       {event.title}
                     </h3>
-                    <p className={`text-white/80 ${isAlternanceCard ? 'mb-4' : 'mb-2'} text-sm font-normal text-center group-hover:text-white/90 transition-colors duration-300`}>
+                    <p className={`text-white/80 ${isAlternanceCard ? 'mb-4' : 'mb-2'} text-base md:text-lg font-normal text-center group-hover:text-white/90 transition-colors duration-300`}>
                       {event.company}
                     </p>
                     {event.description && (
-                      <p className="text-white/70 text-sm leading-relaxed text-left group-hover:text-white/80 transition-colors duration-300">
+                      <p className="text-white/70 text-base md:text-lg leading-relaxed text-left group-hover:text-white/80 transition-colors duration-300">
                         {event.description}
                       </p>
                     )}
