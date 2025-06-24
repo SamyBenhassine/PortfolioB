@@ -157,7 +157,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="pt-8 pb-12 min-h-screen flex items-center">
       <div className="container mx-auto px-8 w-4/5 max-w-none">
-        <h2 className="text-5xl md:text-6xl font-light mb-16 tracking-tight text-center text-white">
+        <h2 className="text-3xl md:text-4xl font-light mb-16 tracking-tight text-center text-white">
           <span className="text-coolors-green-bright">/</span> 
           <span className="ml-2">Réalisations</span>
         </h2>
