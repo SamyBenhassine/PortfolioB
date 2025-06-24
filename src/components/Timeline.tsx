@@ -75,13 +75,13 @@ const Timeline: React.FC = () => {
 
   return (
     <section id="timeline" className="pt-24 pb-16">
-      <div className="container mx-auto px-4 max-w-7xl">
-        <h2 className="text-3xl md:text-4xl font-light mb-12 tracking-tight text-center text-white">
+      <div className="container mx-auto px-8 w-full max-w-none">
+        <h2 className="text-5xl md:text-6xl font-light mb-12 tracking-tight text-center text-white">
           <span className="text-coolors-green-bright">/</span> 
           <span className="ml-2">Timeline</span>
         </h2>
 
-        <div className="relative max-w-5xl mx-auto" style={{ height: `${years.length * yearSpacing - 100}px` }}>
+        <div className="relative w-full mx-auto" style={{ height: `${years.length * yearSpacing - 100}px` }}>
           {/* Main vertical line (subtle background) */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-white/10 via-white/5 to-white/10"></div>
 

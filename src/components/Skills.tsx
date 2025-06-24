@@ -171,7 +171,7 @@ const Skills: React.FC = () => {
 
   return (
     <section id="skills" className="pt-8 pb-12 min-h-screen flex items-center">
-      <div className="container mx-auto px-6 max-w-6xl">
+      <div className="container mx-auto px-8 w-full max-w-none">
         <div className="pt-2 md:pt-0">
           <div className="flex justify-between items-baseline mb-8">
             <h2 className="text-5xl md:text-6xl font-light mb-12 tracking-tight text-center text-white">

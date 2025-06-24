@@ -3,7 +3,7 @@ import React from 'react';
 const About: React.FC = () => {
   return (
     <section id="about" className="py-12 min-h-screen flex items-center">
-      <div className="container mx-auto px-6 max-w-6xl">
+      <div className="container mx-auto px-8 w-full max-w-none">
         <div className="mt-16 md:mt-20">
           <h1 className="text-5xl md:text-6xl font-light mb-8 text-white">
             <span className="text-coolors-green-bright">/</span> 

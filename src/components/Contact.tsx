@@ -37,16 +37,16 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="py-20 pb-36 min-h-screen flex items-center">
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="container mx-auto px-8 w-full max-w-none">
         <div className="flex justify-end mb-8">
-          <h2 className="text-3xl md:text-4xl font-light tracking-tight text-white">
+          <h2 className="text-5xl md:text-6xl font-light tracking-tight text-white">
             <span className="text-coolors-green-bright">/</span> 
             <span className="ml-2">Contact</span>
           </h2>
         </div>
         
         <div className="flex justify-center">
-          <div className="glass-card p-12 max-w-2xl w-full border-t-4 border-coolors-green-bright">
+          <div className="glass-card p-12 w-full border-t-4 border-coolors-green-bright max-w-4xl mx-auto">
             {!isSubmitted ? (
               <>
                 <h3 className="text-2xl font-bold mb-8 text-white text-center">Contactez-moi</h3>
