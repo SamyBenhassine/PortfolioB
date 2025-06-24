@@ -156,7 +156,7 @@ const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="pt-8 pb-12 min-h-screen flex items-center">
-      <div className="container mx-auto px-8 w-full max-w-none">
+      <div className="container mx-auto px-8 w-4/5 max-w-none">
         <h2 className="text-5xl md:text-6xl font-light mb-16 tracking-tight text-center text-white">
           <span className="text-coolors-green-bright">/</span> 
           <span className="ml-2">Réalisations</span>
@@ -168,18 +168,21 @@ const Projects: React.FC = () => {
               key={project.id}
               ref={(el) => (cardRefs.current[index] = el)}
               onClick={() => handleCardClick(index)}
-              className={`glass-card p-6 hover:scale-105 transition-all duration-300 cursor-pointer ${project.accentColor} border-l-4 group rounded-lg`}
+              className={`glass-card p-8 hover:scale-105 transition-all duration-300 cursor-pointer ${project.accentColor} border-l-4 group rounded-lg min-h-80`}
               style={{
                 opacity: expandedCard === index ? 0 : 1,
                 pointerEvents: expandedCard === index ? 'none' : 'auto',
                 transition: 'opacity 0ms'
               }}
             >
-              <div className={`mb-4 ${project.iconColor} group-hover:scale-110 transition-transform duration-300`}>
-                {project.icon}
+              <div className={`mb-6 ${project.iconColor} group-hover:scale-110 transition-transform duration-300`}>
+                {React.isValidElement(project.icon) 
+                  ? React.cloneElement(project.icon as React.ReactElement, { size: 32 })
+                  : project.icon
+                }
               </div>
               
-              <h3 className="text-lg font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-3">
+              <h3 className="text-xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
                 {project.title}
               </h3>
 

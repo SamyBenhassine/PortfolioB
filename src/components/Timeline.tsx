@@ -75,7 +75,7 @@ const Timeline: React.FC = () => {
 
   return (
     <section id="timeline" className="pt-24 pb-16">
-      <div className="container mx-auto px-8 w-full max-w-none">
+      <div className="container mx-auto px-8 w-4/5 max-w-none">
         <h2 className="text-5xl md:text-6xl font-light mb-12 tracking-tight text-center text-white">
           <span className="text-coolors-green-bright">/</span> 
           <span className="ml-2">Timeline</span>

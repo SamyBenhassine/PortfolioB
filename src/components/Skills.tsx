@@ -171,7 +171,7 @@ const Skills: React.FC = () => {
 
   return (
     <section id="skills" className="pt-8 pb-12 min-h-screen flex items-center">
-      <div className="container mx-auto px-8 w-full max-w-none">
+      <div className="container mx-auto px-8 w-4/5 max-w-none">
         <div className="pt-2 md:pt-0">
           <div className="flex justify-between items-baseline mb-8">
             <h2 className="text-5xl md:text-6xl font-light mb-12 tracking-tight text-center text-white">
@@ -191,17 +191,17 @@ const Skills: React.FC = () => {
               key={index}
               ref={(el) => (cardRefs.current[index] = el)}
               onClick={() => handleCardClick(index)}
-              className={`glass-card p-6 hover:scale-105 transition-all duration-300 cursor-pointer ${skill.accentColor} border-l-4 group rounded-lg`}
+              className={`glass-card p-8 hover:scale-105 transition-all duration-300 cursor-pointer ${skill.accentColor} border-l-4 group rounded-lg min-h-64`}
               style={{
                 opacity: expandedCard === index ? 0 : 1,
                 pointerEvents: expandedCard === index ? 'none' : 'auto',
                 transition: 'opacity 0ms'
               }}
             >
-              <div className={`mb-4 ${skill.iconColor} group-hover:scale-110 transition-transform duration-300`}>
-                {skill.icon}
+              <div className={`mb-6 ${skill.iconColor} group-hover:scale-110 transition-transform duration-300`}>
+                {React.cloneElement(skill.icon, { size: 32 })}
               </div>
-              <h3 className="text-lg font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-3">
+              <h3 className="text-xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
                 {skill.name}
               </h3>
               
@@ -241,17 +241,17 @@ const Skills: React.FC = () => {
                 key={adjustedIndex}
                 ref={(el) => (cardRefs.current[adjustedIndex] = el)}
                 onClick={() => handleCardClick(adjustedIndex)}
-                className={`glass-card p-6 hover:scale-105 transition-all duration-300 cursor-pointer ${skill.accentColor} border-l-4 group rounded-lg`}
+                className={`glass-card p-8 hover:scale-105 transition-all duration-300 cursor-pointer ${skill.accentColor} border-l-4 group rounded-lg min-h-64`}
                 style={{
                   opacity: expandedCard === adjustedIndex ? 0 : 1,
                   pointerEvents: expandedCard === adjustedIndex ? 'none' : 'auto',
                   transition: 'opacity 0ms'
                 }}
               >
-                <div className={`mb-4 ${skill.iconColor} group-hover:scale-110 transition-transform duration-300`}>
-                  {skill.icon}
+                <div className={`mb-6 ${skill.iconColor} group-hover:scale-110 transition-transform duration-300`}>
+                  {React.cloneElement(skill.icon, { size: 32 })}
                 </div>
-                <h3 className="text-lg font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-3">
+                <h3 className="text-xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
                   {skill.name}
                 </h3>
                 
