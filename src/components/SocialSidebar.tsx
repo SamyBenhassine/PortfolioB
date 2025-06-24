@@ -9,7 +9,7 @@ const SocialSidebar: React.FC = () => {
       icon: <img 
         src={githubIcon} 
         alt="GitHub" 
-        className="w-[24px] h-[24px] opacity-100 group-hover:opacity-80 transition-opacity duration-300"
+        className="w-[32px] h-[32px] opacity-100 group-hover:opacity-80 transition-opacity duration-300"
       />, 
       url: '#', 
       label: 'GitHub' 
@@ -18,14 +18,14 @@ const SocialSidebar: React.FC = () => {
       icon: <img 
         src={linkedinIcon} 
         alt="LinkedIn" 
-        className="w-[24px] h-[24px] opacity-100 group-hover:opacity-80 transition-opacity duration-300"
+        className="w-[32px] h-[32px] opacity-100 group-hover:opacity-80 transition-opacity duration-300"
       />, 
       url: '#', 
       label: 'LinkedIn' 
     },
     { 
       icon: <Mail 
-        className="w-[24px] h-[24px] text-white group-hover:text-coolors-cyan-light transition-colors duration-300"
+        className="w-[32px] h-[32px] text-white group-hover:text-coolors-cyan-light transition-colors duration-300"
       />, 
       url: 'mailto:benhassine@et.esiea.fr', 
       label: 'Email' 
@@ -42,7 +42,7 @@ const SocialSidebar: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={social.label}
-            className="p-3 bg-coolors-cyan-medium/20 rounded-full backdrop-blur-sm hover:bg-coolors-green-bright/30 group border border-coolors-cyan-medium/30 hover:-translate-y-1 transition-all duration-300"
+            className="p-4 bg-coolors-cyan-medium/20 rounded-full backdrop-blur-sm hover:bg-coolors-green-bright/30 group border border-coolors-cyan-medium/30 hover:-translate-y-1 transition-all duration-300"
           >
             {social.icon}
           </a>

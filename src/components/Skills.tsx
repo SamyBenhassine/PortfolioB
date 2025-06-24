@@ -201,7 +201,7 @@ const Skills: React.FC = () => {
               <div className={`mb-6 ${skill.iconColor} group-hover:scale-110 transition-transform duration-300`}>
                 {React.cloneElement(skill.icon, { size: 32 })}
               </div>
-              <h3 className="text-xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
+              <h3 className="text-2xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
                 {skill.name}
               </h3>
               
@@ -211,7 +211,7 @@ const Skills: React.FC = () => {
                   <button
                     key={projectIndex}
                     onClick={(e) => handleProjectTagClick(project, e)}
-                    className="text-xs px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
+                    className="text-sm px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
                   >
                     {project.length > 30 ? `${project.substring(0, 30)}...` : project}
                   </button>
@@ -251,7 +251,7 @@ const Skills: React.FC = () => {
                 <div className={`mb-6 ${skill.iconColor} group-hover:scale-110 transition-transform duration-300`}>
                   {React.cloneElement(skill.icon, { size: 32 })}
                 </div>
-                <h3 className="text-xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
+                <h3 className="text-2xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
                   {skill.name}
                 </h3>
                 
@@ -261,7 +261,7 @@ const Skills: React.FC = () => {
                     <button
                       key={projectIndex}
                       onClick={(e) => handleProjectTagClick(project, e)}
-                      className="text-xs px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
+                      className="text-sm px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
                     >
                       {project.length > 40 ? `${project.substring(0, 40)}...` : project}
                     </button>

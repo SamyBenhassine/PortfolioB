@@ -182,7 +182,7 @@ const Projects: React.FC = () => {
                 }
               </div>
               
-              <h3 className="text-xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
+              <h3 className="text-2xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
                 {project.title}
               </h3>
 
@@ -191,7 +191,7 @@ const Projects: React.FC = () => {
                   <button
                     key={techIndex}
                     onClick={(e) => handleTechTagClick(tech, e)}
-                    className="text-xs px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
+                    className="text-sm px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
                   >
                     {tech}
                   </button>
@@ -199,7 +199,7 @@ const Projects: React.FC = () => {
               </div>
 
               <div 
-                className="text-sm text-gray-300 leading-relaxed"
+                className="text-base text-gray-300 leading-relaxed"
                 style={{
                   display: '-webkit-box',
                   WebkitLineClamp: 10,

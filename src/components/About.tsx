@@ -14,7 +14,7 @@ const About: React.FC = () => {
                Backend Software Engineer
             </h3>
             <div className="glass-card p-12 border-l-4 border-coolors-green-bright mb-8 rounded-lg min-h-96">
-              <p className="text-gray-100 leading-relaxed text-xl">
+              <p className="text-gray-100 leading-relaxed text-2xl">
               Je suis ingénieur logiciel, spécialisé en backend, passionné par ce qui se passe sous le capot des systèmes complexes. J'aime quand la technique a du sens, quand elle sert des usages concrets.<br />
               C'est le cas dans le secteur des cartes de paiement chez Worldline, où je travaille sur des applications critiques.<br />
               <br />
@@ -25,7 +25,7 @@ Aujourd'hui, je continue la construction d'une expertise solide en backend (Java
             </div>
             <a 
               href="#skills" 
-              className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-to-r from-coolors-cyan-medium/30 to-coolors-green-bright/30 text-white hover:from-coolors-cyan-medium hover:to-coolors-green-bright transition-all duration-300 font-medium backdrop-blur-sm border border-coolors-green-bright/30 hover:scale-105 text-lg"
+              className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-to-r from-coolors-cyan-medium/30 to-coolors-green-bright/30 text-white hover:from-coolors-cyan-medium hover:to-coolors-green-bright transition-all duration-300 font-medium backdrop-blur-sm border border-coolors-green-bright/30 hover:scale-105 text-xl"
             >
               <span>Voir mes compétences</span>
               <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
