@@ -182,9 +182,9 @@ const Projects: React.FC = () => {
                 }
               </div>
               
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
-                {project.title}
-              </h3>
+                          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
+              {project.title}
+            </h3>
 
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech, techIndex) => (
@@ -272,7 +272,7 @@ const Projects: React.FC = () => {
             <h3 
               className={`font-bold text-white mb-4 transition-all duration-300`}
               style={{
-                fontSize: isAnimating ? '3rem' : '1.125rem',
+                fontSize: isAnimating ? '2.5rem' : '1.125rem',
                 transitionDelay: isAnimating ? '150ms' : '0ms'
               }}
             >
