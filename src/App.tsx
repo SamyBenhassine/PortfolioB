@@ -44,25 +44,11 @@ function App() {
       
       <main className="relative">
         {/* All sections now have transparent backgrounds to show the gradient */}
-        <div className="section-spacing">
-          <About />
-        </div>
-        
-        <div className="section-spacing">
-          <Skills />
-        </div>
-        
-        <div className="section-spacing">
-          <Projects />
-        </div>
-        
-        <div className="section-spacing">
-          <Timeline />
-        </div>
-        
-        <div className="section-spacing">
-          <Contact />
-        </div>
+        <About />
+        <Skills />
+        <Projects />
+        <Timeline />
+        <Contact />
       </main>
     </div>
   );

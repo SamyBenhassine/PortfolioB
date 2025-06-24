@@ -161,7 +161,7 @@ html {
 
 /* Section spacing without background colors */
 .section-spacing {
-  padding: 1rem 0;
+  padding: 0;
   position: relative;
 }
 

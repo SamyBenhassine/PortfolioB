@@ -170,15 +170,15 @@ const Skills: React.FC = () => {
   }, [allSkills]);
 
   return (
-    <section id="skills" className="pt-8 pb-20 min-h-screen flex items-center">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section id="skills" className="pt-8 pb-12 min-h-screen flex items-center">
+      <div className="container mx-auto px-6 max-w-6xl">
         <div className="pt-2 md:pt-0">
           <div className="flex justify-between items-baseline mb-8">
-            <h2 className="text-3xl md:text-4xl font-light mb-12 tracking-tight text-center text-white">
+            <h2 className="text-5xl md:text-6xl font-light mb-12 tracking-tight text-center text-white">
               <span className="text-coolors-green-bright">/</span> 
               <span className="ml-2">Compétences</span>
             </h2>
-            <h3 className="text-xl md:text-2xl font-semibold text-white mt-8">
+            <h3 className="text-2xl md:text-3xl font-semibold text-white mt-8">
               Techniques
             </h3>
           </div>

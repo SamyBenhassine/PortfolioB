@@ -2,19 +2,19 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 min-h-screen flex items-center">
-      <div className="container mx-auto px-4 max-w-7xl">
-        <div className="mt-24 md:mt-32">
-          <h1 className="text-4xl md:text-5xl font-light mb-6 text-white">
+    <section id="about" className="py-12 min-h-screen flex items-center">
+      <div className="container mx-auto px-6 max-w-6xl">
+        <div className="mt-16 md:mt-20">
+          <h1 className="text-5xl md:text-6xl font-light mb-8 text-white">
             <span className="text-coolors-green-bright">/</span> 
             <span className="ml-2">A propos de moi</span>
           </h1>
-          <div className="mt-8 md:mt-12">
-            <h3 className="text-2xl font-bold mb-6 text-coolors-cyan-light ml-32">
+          <div className="mt-6 md:mt-8">
+            <h3 className="text-3xl font-bold mb-8 text-coolors-cyan-light">
                Backend Software Engineer
             </h3>
-            <div className="glass-card p-6 border-l-4 border-coolors-green-bright mb-6 rounded-lg max-w-4xl mx-auto">
-              <p className="text-gray-100 leading-relaxed">
+            <div className="glass-card p-8 border-l-4 border-coolors-green-bright mb-8 rounded-lg">
+              <p className="text-gray-100 leading-relaxed text-lg">
               Je suis ingénieur logiciel, spécialisé en backend, passionné par ce qui se passe sous le capot des systèmes complexes. J'aime quand la technique a du sens, quand elle sert des usages concrets.<br />
               C'est le cas dans le secteur des cartes de paiement chez Worldline, où je travaille sur des applications critiques.<br />
               <br />
@@ -25,7 +25,7 @@ Aujourd'hui, je continue la construction d'une expertise solide en backend (Java
             </div>
             <a 
               href="#skills" 
-              className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-coolors-cyan-medium/30 to-coolors-green-bright/30 text-white hover:from-coolors-cyan-medium hover:to-coolors-green-bright transition-all duration-300 font-medium backdrop-blur-sm border border-coolors-green-bright/30 hover:scale-105 ml-56"
+              className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-to-r from-coolors-cyan-medium/30 to-coolors-green-bright/30 text-white hover:from-coolors-cyan-medium hover:to-coolors-green-bright transition-all duration-300 font-medium backdrop-blur-sm border border-coolors-green-bright/30 hover:scale-105 text-lg"
             >
               <span>Voir mes compétences</span>
               <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
