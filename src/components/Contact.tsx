@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 pb-36 min-h-screen flex items-center">
       <div className="container mx-auto px-8 w-4/5 max-w-none">
         <div className="flex justify-end mb-8">
-          <h2 className="text-5xl md:text-6xl font-light tracking-tight text-white">
+          <h2 className="text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-white">
             <span className="text-coolors-green-bright">/</span> 
             <span className="ml-2">Contact</span>
           </h2>
@@ -49,12 +49,12 @@ const Contact: React.FC = () => {
           <div className="glass-card p-16 w-full border-t-4 border-coolors-green-bright max-w-5xl mx-auto min-h-96">
             {!isSubmitted ? (
               <>
-                <h3 className="text-3xl font-bold mb-8 text-white text-center">Contactez-moi</h3>
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white text-center">Contactez-moi</h3>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-gray-200 text-base font-medium mb-2">
+                      <label htmlFor="name" className="block text-gray-200 text-base md:text-lg lg:text-xl font-medium mb-2">
                         Nom *
                       </label>
                       <input
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="email" className="block text-gray-200 text-base font-medium mb-2">
+                      <label htmlFor="email" className="block text-gray-200 text-base md:text-lg lg:text-xl font-medium mb-2">
                         Email *
                       </label>
                       <input
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="subject" className="block text-gray-200 text-base font-medium mb-2">
+                    <label htmlFor="subject" className="block text-gray-200 text-base md:text-lg lg:text-xl font-medium mb-2">
                       Sujet
                     </label>
                     <input
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-gray-200 text-base font-medium mb-2">
+                    <label htmlFor="message" className="block text-gray-200 text-base md:text-lg lg:text-xl font-medium mb-2">
                       Message *
                     </label>
                     <textarea
@@ -129,7 +129,7 @@ const Contact: React.FC = () => {
                 </form>
                 
                 <div className="mt-8 pt-6 border-t border-white/20 text-center">
-                  <p className="text-gray-200 text-base">
+                  <p className="text-gray-200 text-base md:text-lg lg:text-xl">
                     Ou contactez-moi directement : 
                     <a href="mailto:benhassine@et.esiea.fr" className="text-coolors-green-bright hover:underline ml-1">
                       benhassine@et.esiea.fr

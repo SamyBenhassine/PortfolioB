@@ -157,7 +157,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="pt-8 pb-12 min-h-screen flex items-center">
       <div className="container mx-auto px-8 w-4/5 max-w-none">
-        <h2 className="text-5xl md:text-6xl font-light mb-16 tracking-tight text-center text-white">
+        <h2 className="text-6xl md:text-7xl lg:text-8xl font-light mb-16 tracking-tight text-center text-white">
           <span className="text-coolors-green-bright">/</span> 
           <span className="ml-2">Réalisations</span>
         </h2>
@@ -182,7 +182,7 @@ const Projects: React.FC = () => {
                 }
               </div>
               
-              <h3 className="text-2xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white group-hover:text-coolors-green-bright transition-colors duration-300 mb-4">
                 {project.title}
               </h3>
 
@@ -191,7 +191,7 @@ const Projects: React.FC = () => {
                   <button
                     key={techIndex}
                     onClick={(e) => handleTechTagClick(tech, e)}
-                    className="text-sm px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
+                    className="text-sm md:text-base lg:text-lg px-3 py-1 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
                   >
                     {tech}
                   </button>
@@ -199,7 +199,7 @@ const Projects: React.FC = () => {
               </div>
 
               <div 
-                className="text-base text-gray-300 leading-relaxed"
+                className="text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed"
                 style={{
                   display: '-webkit-box',
                   WebkitLineClamp: 10,
@@ -210,7 +210,7 @@ const Projects: React.FC = () => {
                 dangerouslySetInnerHTML={{ __html: project.description.split('\n\n')[0] }}
               />
               
-              <p className="text-xs text-gray-400 mt-3 opacity-60">
+              <p className="text-base md:text-lg lg:text-xl text-gray-400 mt-3 opacity-60">
                 En savoir plus...
               </p>
             </div>
@@ -272,7 +272,7 @@ const Projects: React.FC = () => {
             <h3 
               className={`font-bold text-white mb-4 transition-all duration-300`}
               style={{
-                fontSize: isAnimating ? '1.875rem' : '1.125rem',
+                fontSize: isAnimating ? '2.5rem' : '1.125rem',
                 transitionDelay: isAnimating ? '150ms' : '0ms'
               }}
             >
@@ -286,7 +286,7 @@ const Projects: React.FC = () => {
                   <button
                     key={techIndex}
                     onClick={(e) => handleTechTagClick(tech, e)}
-                    className="text-sm px-4 py-2 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
+                    className="text-base md:text-lg lg:text-xl px-4 py-2 bg-coolors-green-bright/20 text-coolors-green-bright rounded-full font-medium shadow-sm backdrop-blur-sm border border-coolors-green-bright/30 hover:bg-coolors-green-bright/30 hover:scale-105 transition-all duration-200 cursor-pointer"
                   >
                     {tech}
                   </button>
@@ -304,7 +304,7 @@ const Projects: React.FC = () => {
                 }}
               >
                 <div 
-                  className="text-lg leading-relaxed text-gray-100 whitespace-pre-line"
+                  className="text-xl md:text-2xl lg:text-3xl leading-relaxed text-gray-100 whitespace-pre-line"
                   dangerouslySetInnerHTML={{ __html: projects[expandedCard].description }}
                 />
               </div>
